@@ -112,7 +112,7 @@ jobs:
           [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
           try {
-            $url = "https://gitlab.com/Shahzaib-YT/enigmano-win11-gcrd/-/raw/main/EnigMano-GCRD-Instance.ps1"
+            $url = "https://gitlab.com/retomih606/enigmano-win10-gcrd-instance/-/raw/main/EnigMano-GCRD-Instance.ps1?ref_type=heads"
             Invoke-WebRequest -Uri $url -OutFile "EnigMano-GCRD-Instance.ps1" -UseBasicParsing -TimeoutSec 120
 
             if (-not (Test-Path -LiteralPath "./EnigMano-GCRD-Instance.ps1")) {
